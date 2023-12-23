@@ -61,7 +61,6 @@ button {
     margin: 30px 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
-    /* overflow: hidden; */
     padding: 15px;
 }
 
@@ -78,7 +77,6 @@ button {
 
 .product-item span {
     display: inline-block;
-    /* margin-bottom: 0px; */
     background-color: #220efa;
     color: #fff;
     border-radius: 10px;
