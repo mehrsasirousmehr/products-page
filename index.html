@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        Product Page
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>Product Page</header>
 
-    <main>
-        <div id="search">
-            <input type="text" id="search-input" placeholder="search name">
-            <div class="search__cta">
-                <button class="filter selected">All</button>
-                <button class="filter">Tech</button>
-                <button class="filter">Clothing</button>
-                <button class="filter">Health</button>
+        <main>
+            <div id="search">
+                <input type="text" id="search-input" placeholder="search name" />
+                <div class="search__cta">
+                    <button class="filter selected" data-filter="all">All</button>
+                    <button class="filter" data-filter="tech">Tech</button>
+                    <button class="filter" data-filter="clothing">Clothing</button>
+                    <button class="filter" data-filter="health">Health</button>
+                </div>
+                <div id="search-price">
+                    <input type="number" placeholder="search price" />
+                    <button>search</button>
+                </div>
             </div>
-            <div id="search-price">
-                <input type="number" placeholder="search price">
-                <button>search</button>
-            </div>
-        </div>
-        <!-- products -->
-        <div id="products">
+            <!-- products -->
+            <div id="products">
+                <div class="product-item" data-category="tech">
+                    <img src="img/iphone.png" alt="iphon" />
+                    <p>Apple iphone 14 pro</p>
+                    <span>$ 1499</span>
+                </div>
 
-            <div class="product-item" data-category="tech">
-                <img src="img/iphone.png" alt="iphon">
-                <p>Apple iphone 14 pro</p>
-                <span>$ 1499</span>
-            </div>
+                <div class="product-item" data-category="clothing">
+                    <img src="img/shoes.png" alt="shoe" />
+                    <p>Running shoes</p>
+                    <span>$ 199</span>
+                </div>
 
-            <div class="product-item" data-category="clothing">
-                <img src="img/shoes.png" alt="shoe">
-                <p>Running shoes</p>
-                <span>$ 199</span>
-            </div>
+                <div class="product-item" data-category="tech">
+                    <img src="img/watch.png" alt="watch" />
+                    <p>Apple watch</p>
+                    <span>$ 399</span>
+                </div>
 
-            <div class="product-item" data-category="tech">
-                <img src="img/watch.png" alt="watch">
-                <p>Apple watch</p>
-                <span>$ 399</span>
-            </div>
+                <div class="product-item" data-category="clothing">
+                    <img src="img/bag.png" alt="bag" />
+                    <p>College bag</p>
+                    <span>$ 139</span>
+                </div>
 
-            <div class="product-item" data-category="clothing">
-                <img src="img/bag.png" alt="bag">
-                <p>College bag</p>
-                <span>$ 139</span>
-            </div>
+                <div class="product-item" data-category="clothing">
+                    <img src="img/jacket.png" alt="jacket" />
+                    <p>Boy's jacket</p>
+                    <span>$ 59</span>
+                </div>
 
-            <div class="product-item" data-category="clothing">
-                <img src="img/jacket.png" alt="jacket">
-                <p>Boy's jacket</p>
-                <span>$ 59</span>
-            </div>
+                <div class="product-item" data-category="health">
+                    <img src="img/shampoo.png" alt="shampoo" />
+                    <p>Keratin hair care</p>
+                    <span>$ 39</span>
+                </div>
 
-            <div class="product-item" data-category="health">
-                <img src="img/shampoo.png" alt="shampoo">
-                <p>Keratin hair care</p>
-                <span>$ 39</span>
-            </div>
+                <div class="product-item" data-category="tech">
+                    <img src="img/airpods.png" alt="airpods" />
+                    <p>Apple airpod pro</p>
+                    <span>$ 299</span>
+                </div>
 
-            <div class="product-item" data-category="tech">
-                <img src="img/airpods.png" alt="airpods">
-                <p>Apple airpod pro</p>
-                <span>$ 299</span>
-            </div>
+                <div class="product-item" data-category="health">
+                    <img src="img/vitamin.png" alt="vitamin" />
+                    <p>Vitamin E</p>
+                    <span>$ 39</span>
+                </div>
 
-            <div class="product-item" data-category="health">
-                <img src="img/vitamin.png" alt="vitamin">
-                <p>Vitamin E</p>
-                <span>$ 39</span>
+                <div class="product-item" data-category="health">
+                    <img src="img/cream.png" alt="cream" />
+                    <p>Face cream</p>
+                    <span>$ 39</span>
+                </div>
             </div>
-
-            <div class="product-item" data-category="health">
-                <img src="img/cream.png" alt="cream" >
-                <p>Face cream</p>
-                <span>$ 39</span>
-            </div>
-        </div>
-    </main>
-    <script src="js/app.js"></script>
-</body>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
 </html>
