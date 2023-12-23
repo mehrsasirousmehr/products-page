@@ -20,7 +20,9 @@ const searchHandler = (event) => {
 // add event to all buttons
 const filterHandler = (event) => {
     const filter = event.target.dataset.filter;
+    cahngeClass(filter);
 
+    // filter products
     products.forEach((product) => {
         const category = product.dataset.category;
         if (filter === "all") {
@@ -28,7 +30,18 @@ const filterHandler = (event) => {
         } else {
             filter === category ? (product.style.display = "block") : (product.style.display = "none");
         }
-    })
+    });
+};
+
+// change the style of the selected button
+const cahngeClass = (filter) => {
+    buttons.forEach((button) => {
+        if (button.dataset.filter === filter) {
+            button.classList.add("selected");
+        } else {
+            button.classList.remove("selected");
+        }
+    });
 };
 
 searchInput.addEventListener("keyup", searchHandler);
