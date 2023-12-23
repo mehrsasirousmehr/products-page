@@ -20,6 +20,15 @@ const searchHandler = (event) => {
 // add event to all buttons
 const filterHandler = (event) => {
     const filter = event.target.dataset.filter;
+
+    products.forEach((product) => {
+        const category = product.dataset.category;
+        if (filter === "all") {
+            product.style.display = "block";
+        } else {
+            filter === category ? (product.style.display = "block") : (product.style.display = "none");
+        }
+    })
 };
 
 searchInput.addEventListener("keyup", searchHandler);
